@@ -1,4 +1,6 @@
-from utils import db_connect
-engine = db_connect()
+import streamlit as st
 
-# your code here
+st.write('Hello, world!')
+
+x = st.slider('x')
+st.write(x, 'squared is', x * x)
